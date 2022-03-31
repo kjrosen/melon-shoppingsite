@@ -2,8 +2,13 @@
 {% extends 'base.html' %}
 
 {% block body %}
+    <ul>
+        {% for item in cart %}
+        <li>{{item}}</li>
+        {% endfor %}
+    </ul>
 
-    <table class="table table-striped mt-3">
+    <!-- <table class="table table-striped mt-3">
         <thead>
         <tr>
             <th>Melon Name</th>
@@ -38,9 +43,9 @@
             <td>$6.00</td>
         </tr>
         </tbody>
-    </table>
+    </table> -->
 
-    <h3>Total: $27.00</h3>
+    <!-- <h3>Total: $27.00</h3> -->
 
     <a href="/checkout" class="btn btn-large btn-primary">Check Out</a>
 
